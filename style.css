@@ -1,0 +1,56 @@
+/* Configuração Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* O segredo para o alinhamento */
+#container-produto {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que os itens "pulem" para a linha de baixo */
+    justify-content: center;
+    gap: 20px;             /* Espaço entre os cartões */
+    padding: 20px;
+    max-width: 1200px;     /* Limita a largura para caber 4 por linha */
+    margin: 0 auto;
+}
+
+/* Mudamos de #ID para .classe para afetar todos os 8 sapatos */
+.card-produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px;          /* Ajustado para caber 4 na linha */
+    transition: transform 0.3s;
+}
+
+img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+p {
+    color: #333;
+    font-weight: bold;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
